@@ -55,7 +55,7 @@ __main
 	STR r1,[r0]     ;scrivo il valore modificato
 
 
-	;ESERCIZIO 1 - Collaudare il seguente codice
+	;ESERCIZIO a - Collaudare il seguente codice
 	;Mettere a 1 il bit 15 della parola con indirizzo 0x20000018
 	MOV r0,#0x18
 	MOVT r0,#0x2000 ;indirizzo della parola
@@ -67,7 +67,7 @@ __main
 	STR r1,[r0]     ;scrivo il valore modificato
 
 
-	;ESERCIZIO 2 - Collaudare il seguente codice
+	;ESERCIZIO b - Collaudare il seguente codice
 	;Azzerare i bit 5, 6 e 7 della parola 
 	;con indirizzo 0x20000014
 	MOV r0,#0x14
@@ -77,7 +77,7 @@ __main
 	STR r1,[r0]     ;scrivo il valore modificato	
 
 
-	;ESERCIZIO 3 - Collaudare il seguente codice
+	;ESERCIZIO c - Collaudare il seguente codice
 	;Scrivere un programma che legga tre word agli indirizzi 
 	;0x20000000, 0x20000004 e 0x20000008, li sommi e salvi 
 	;il risultato all'indirizzo 0x2000000C.
@@ -111,7 +111,7 @@ __main
 	STR r2,[r0]     ;scrivo il risultato in memoria
 
 
-	;ESERCIZIO 4 - Collaudare il seguente codice
+	;ESERCIZIO d - Collaudare il seguente codice
 	;Sommare 2 vettori di 2 byte. Il primo si trova
 	;all'indirizzo 0x20000000 e il secondo all'indirizzo
 	;0x20000006. Salvare il risultato nel vettore a partire
