@@ -1,7 +1,7 @@
 ;==========================================================================================
 ; Project:  ES03 - Istruzioni di spostamento dati
 ; Date:     20/11/21
-; Author:   <autore>
+; Author:   <autore> 
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;  Collaudo di istruzioni di spostamento dati
 ;
