@@ -32,11 +32,6 @@ void loop() {
   if(swDwIsLongPressed()) {
     if(stato_led_blue==1) stato_led_blue=0; else stato_led_blue=1;
   }
-  //if(swUpIsLongPressed()) {
-   // digitalWrite(LED_BLUE_PIN, HIGH); 
-    //delay(500);
-    //digitalWrite(LED_BLUE_PIN, LOW);
-  //}
 
   if(stato_led_green==1) {
     digitalWrite(LED_GREEN_PIN, HIGH);
