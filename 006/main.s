@@ -1,16 +1,13 @@
 ;==========================================================================================
-; Project:  <nome del progetto/modulo/file>
-; Date:     <data>
-; Author:   <autore>
+; Project:  Istruzioni artmetiche
+; Date:     26/11/21
+; Author:   
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-;  <inserire una breve descrizione del progetto/modulo/libreria>
-;  <specifiche del progetto/modulo/libreria>
-;  <specifiche del collaudo>
+;  Collaudo istruzioni artimetiche
 ;
 ; Ver   Date        Comment
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-; 1.0   24/10/16    Versione iniziale
-; <Descrivere per ogni revisione o cambio di versione le modifiche apportate>
+; 1.0   26/11/21    Versione iniziale
 ; 
 ;==========================================================================================
 ;------------------------------------------------------------------------------------------
@@ -54,7 +51,18 @@ __main
 	BIC r1,#1<<10   ;1 spostato a sinistra di 10 posti
 	STR r1,[r0]     ;scrivo il valore modificato
 
-
+	; ESEMPIO 2 - This program will calculate the value 
+	; of the following function:
+	; f(x) = 5x^2 - 6x + 8   when x=10.
+	MOV R0, #10     ;x=10
+	MUL R1, R0, R0	;R1=x^2
+	MOV R4, #5
+	MUL R1, R1, R4	;R1=5X^2
+	MOV R5, #6
+	MUL R2, R0, R5	;R2=6x
+	SUB R3, R1, R2	;R3=5x^2-6x
+	ADD R3, R3, #8  ;R3=5x^2-6x+8 - f(x)=0x1C0=448
+	
 	;ESERCIZIO a - Collaudare il seguente codice
 	;Mettere a 1 il bit 15 della parola con indirizzo 0x20000018
 	MOV r0,#0x18
