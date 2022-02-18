@@ -35,15 +35,15 @@ THUMB
 ;  31/03/18  1.0  Versione iniziale
 ;-----------------------------------------------------------------------------------------
 DelayMs
-PUSH {R0-R1,LR}
+    PUSH {R0-R1,LR}
 LoopDelayMs1		
     ; Imposto il numero di cicli
-LoopDelayMs2                    ; Ciclo di Ritardo
+LoopDelayMs2                ; Ciclo di Ritardo
          
-        ; Ciclo interno
+    ; Ciclo interno
           
-BNE	LoopDelayMs1        ; Ciclo esterno
-POP {R0-R1,PC}
+    BNE	LoopDelayMs1        ; Ciclo esterno
+    POP {R0-R1,PC}
 ;-----------------------------------------------------------------------------------------
 ALIGN
 END
