@@ -1,6 +1,6 @@
 /** ****************************************************************************************
 * @file pulsanti.c
-* @brief 202021_TPS2_A_ES04 - Collegamento e gestione di pulsanti con i microcontrollori
+* @brief 202021_TPS2_A_ES04 - Collegamento e gestione di pulsanti con i microcontrollori 
 * 
 * @author Filippo Bilardo - http://fb-labs.blogspot.com/
 * @date <data> 
